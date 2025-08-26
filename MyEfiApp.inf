@@ -1,0 +1,28 @@
+[Defines]
+  INF_VERSION = 1.25
+  BASE_NAME = MyEfiApp
+  FILE_GUID = d5883917-0a86-4144-9d19-09cd720f0e09 # Get a GUID from guidgen.com
+  MODULE_TYPE = UEFI_APPLICATION
+  VERSION_STRING = 1.0
+  ENTRY_POINT = UefiMain
+
+[Sources]
+  UefiMain.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+
+[Guids]
+  gEfiFileInfoGuid
+
+[Ppis]
+
+[Protocols]
+
+[FeaturePcd]
+
+[Pcd]
